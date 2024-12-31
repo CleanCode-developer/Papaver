@@ -1,1 +1,27 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Game Engine</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="gameCanvas"></canvas>
+  <div id="controls">
+    <select id="objectType">
+      <option value="cube">Cube</option>
+      <option value="sphere">Sphere</option>
+      <option value="plane">Plane</option>
+    </select>
+    <button id="addObject">Add Object</button>
+    <button id="exportGame">Export Game</button>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="js/engine.js"></script>
+  <script src="js/renderer.js"></script>
+  <script src="js/sceneManager.js"></script>
+  <script src="js/inputHandler.js"></script>
+  <script src="js/exportGame.js"></script>
+  <script src="js/uiHandler.js"></script>
+</body>
+</html>
